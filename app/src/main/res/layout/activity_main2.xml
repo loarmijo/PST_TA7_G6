@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectionActivity">
+    tools:context=".Main2Activity">
 
     <TextView
-android:id="@+id/textDia"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginStart="37dp"
-android:layout_marginLeft="37dp"
-android:layout_marginTop="54dp"
-android:text="Seleccione Comedor:"
-android:textSize="24sp"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/spinnerComedor" />
+        android:id="@+id/textDia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="37dp"
+    android:layout_marginLeft="37dp"
+    android:layout_marginTop="54dp"
+    android:text="Seleccione Comedor:"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerComedor" />
 
 <TextView
 android:id="@+id/textComedor"

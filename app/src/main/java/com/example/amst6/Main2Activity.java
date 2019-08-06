@@ -16,7 +16,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.SelectionActivity);
+        setContentView(R.layout.activity_main2);
 
         spinnerComedor = (Spinner)findViewById(R.id.spinnerComedor);
         spinnerDia = (Spinner)findViewById(R.id.spinnerComedor);
