@@ -19,7 +19,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         spinnerComedor = (Spinner)findViewById(R.id.spinnerComedor);
-        spinnerDia = (Spinner)findViewById(R.id.spinnerComedor);
+        spinnerDia = (Spinner)findViewById(R.id.spinnerDia);
 
         String [] comedores = {"","Celex","Fadcom","Piscina","FCSH","Fresh Food"};
         String [] dias = {"","Lunes","Martes","Miercoles","Jueves","Viernes"};
@@ -28,6 +28,8 @@ public class Main2Activity extends AppCompatActivity {
 
         ArrayAdapter <String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,dias);
         spinnerDia.setAdapter(adapter2);
+
+
     }
 
     public void iniciar(View view) {

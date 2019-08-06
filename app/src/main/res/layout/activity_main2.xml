@@ -8,15 +8,15 @@
 
     <TextView
         android:id="@+id/textDia"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="37dp"
-    android:layout_marginLeft="37dp"
-    android:layout_marginTop="54dp"
-    android:text="Seleccione Comedor:"
-    android:textSize="24sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/spinnerComedor" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="54dp"
+        android:text="Seleccione Dia:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerComedor" />
 
 <TextView
 android:id="@+id/textComedor"
@@ -50,14 +50,15 @@ android:layout_marginTop="36dp"
 app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toBottomOf="@+id/textDia" />
 
-<Button
-android:id="@+id/button2"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginStart="157dp"
-android:layout_marginLeft="157dp"
-android:layout_marginTop="50dp"
-android:text="Consultar"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/spinnerDia" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="50dp"
+        android:onClick="iniciar"
+        android:text="Consultar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDia" />
     </androidx.constraintlayout.widget.ConstraintLayout>
