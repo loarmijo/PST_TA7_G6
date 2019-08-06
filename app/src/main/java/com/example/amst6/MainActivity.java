@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void inicio(View view) {
-        Intent i = new Intent(this, SelectionActivity.class );
+        Intent i = new Intent(this, Main2Activity.class );
         startActivity(i);
     }
 
