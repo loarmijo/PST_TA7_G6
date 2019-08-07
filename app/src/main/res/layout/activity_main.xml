@@ -15,6 +15,7 @@
         android:layout_marginTop="28dp"
         android:text="Inicio Sesión"
         android:textSize="24sp"
+        android:textColor="#2E8B57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitulo" />
 
@@ -27,6 +28,7 @@
         android:layout_marginTop="164dp"
         android:text="COMEDOR ESPOL"
         android:textSize="36sp"
+        android:textColor="#2E8B57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,6 +40,7 @@
         android:layout_marginLeft="156dp"
         android:layout_marginTop="25dp"
         android:text="Contraseña:"
+        android:textColor="#2E8B57"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
@@ -51,6 +54,7 @@
         android:layout_marginTop="23dp"
         android:text="Usuario:"
         android:textSize="18sp"
+        android:textColor="#2E8B57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInicio" />
 
@@ -63,7 +67,8 @@
         android:layout_marginTop="21dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese usuario:"
+        android:drawableLeft="@drawable/user_icono"
+        android:hint="Ingrese usuario:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -76,7 +81,8 @@
         android:layout_marginTop="140dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese contraseña:"
+        android:drawableLeft="@drawable/clavesita"
+        android:hint="Ingrese contraseña:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -89,6 +95,18 @@
         android:layout_marginTop="16dp"
         android:onClick="inicio"
         android:text="Ingresar"
+        app:backgroundTint="#2E8B57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_espol" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,21 +14,23 @@
         android:layout_marginLeft="37dp"
         android:layout_marginTop="54dp"
         android:text="Seleccione Dia:"
+        android:textColor="#F75E25"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerComedor" />
 
-<TextView
-android:id="@+id/textComedor"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginStart="37dp"
-android:layout_marginLeft="37dp"
-android:layout_marginTop="169dp"
-android:text="Seleccione Comedor:"
-android:textSize="24sp"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textComedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="220dp"
+        android:text="Seleccione Comedor:"
+        android:textColor="#F75E25"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 <Spinner
 android:id="@+id/spinnerComedor"
@@ -37,6 +39,7 @@ android:layout_height="43dp"
 android:layout_marginStart="37dp"
 android:layout_marginLeft="37dp"
 android:layout_marginTop="36dp"
+    app:backgroundTint="#F75E25"
 app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toBottomOf="@+id/textComedor" />
 
@@ -47,6 +50,7 @@ android:layout_height="43dp"
 android:layout_marginStart="37dp"
 android:layout_marginLeft="37dp"
 android:layout_marginTop="36dp"
+    app:backgroundTint="#F75E25"
 app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toBottomOf="@+id/textDia" />
 
@@ -59,6 +63,18 @@ app:layout_constraintTop_toBottomOf="@+id/textDia" />
         android:layout_marginTop="50dp"
         android:onClick="iniciar"
         android:text="Consultar"
+        app:backgroundTint="#F75E25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerDia" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="236dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comida" />
+</androidx.constraintlayout.widget.ConstraintLayout>
