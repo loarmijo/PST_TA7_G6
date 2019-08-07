@@ -15,7 +15,8 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+        Bundle bundle = getIntent().getExtras();
         textView = (TextView)findViewById(R.id.textView);
-        textView.setText("Hola");
+        textView.setText(bundle.getString("comedor"));
     }
 }
