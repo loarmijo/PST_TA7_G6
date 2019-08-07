@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         int id3 =3;
 
 
-        String nombre1 = "fresh food lab";
+        String nombre1 = "Fresh Food";
 
         String descripcion = "Seco de pollo, sopa de legumbres y jugo de naranja";
         String dia = "lunes";
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        bd.close();
         Intent i = new Intent(this, Main2Activity.class );
 
         startActivity(i);
