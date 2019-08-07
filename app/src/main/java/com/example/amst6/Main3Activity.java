@@ -17,6 +17,7 @@ public class Main3Activity extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         textView = (TextView)findViewById(R.id.textView);
-        textView.setText(bundle.getString("comedor"));
+        String s = bundle.getString("dia");
+        textView.setText(s);
     }
 }

@@ -10,9 +10,6 @@ import android.widget.Spinner;
 
 public class Main2Activity extends AppCompatActivity {
 
-
-    private String seleccionComedor;
-    private String seleccionDia;
     private Spinner spinnerComedor;
     private Spinner spinnerDia;
 
@@ -31,11 +28,11 @@ public class Main2Activity extends AppCompatActivity {
 
         ArrayAdapter <String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,dias);
         spinnerDia.setAdapter(adapter2);
-        seleccionComedor = spinnerComedor.getSelectedItem().toString();
-        seleccionDia = spinnerDia.getSelectedItem().toString();
     }
 
     public void iniciar(View view) {
+        String seleccionComedor = spinnerComedor.getSelectedItem().toString();
+        String seleccionDia = spinnerDia.getSelectedItem().toString();
         Intent i = new Intent(this, Main3Activity.class );
         i.putExtra("comedor",seleccionComedor);
         i.putExtra("dia",seleccionDia);
